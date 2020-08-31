@@ -7,7 +7,6 @@
   <meta name="description" content="Sustainability">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <!--<base href="https://www.w3schools.com/" target="_blank">-->
   <style>
     #body {
       background-color: black;
@@ -23,7 +22,15 @@
 
     #gif {
       display: block;
-      width: 50%;
+      width: 35%;
+      padding-left: 25px;
+
+    }
+
+    #iframe {
+      height: 400px;
+      width: 800px;
+      display: block;
       margin-left: auto;
       margin-right: auto;
 
@@ -31,7 +38,6 @@
 
     .intro {
       color: white;
-
     }
 
     .action {
@@ -39,31 +45,18 @@
     }
 
     ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333333;
-    }
-
-    li {
-      float: left;
-    }
-
-    li a {
-      display: block;
+      list-style-type: &check;
       color: white;
-      text-align: center;
-      padding: 16px;
-      text-decoration: none;
     }
 
-    li a:hover {
-      background-color: #111111;
+    table {
+      width: 100%
     }
 
-    <body><ul><li><a href="#home">Home</a></li><li><a href="#news">News</a></li><li><a href="#contact">Contact</a></li><li><a href="#about">About</a></li></ul>body {
-      background-color: blue;
+    table,
+    th,
+    td {
+      border: 1px solid white;
     }
   </style>
 </head>
@@ -71,7 +64,6 @@
 <body id="body">
   <div class="intro">
     <h1 id="header">Sustainability</h1>
-    <!-- I want to add a gif that links to the UN website, https://www.un.org/sustainabledevelopment/sustainable-consumption-production/-->
     <p>
       Environmental sustainability is a key component in grappling with the issue of climate change.
       It's a globally recognized issue, but one that can be overlooked in our daily lives.
@@ -84,52 +76,59 @@
       ends up rotting in the bins of consumers and retailers,
       or spoiling due to poor transportation and harvesting practices."
     </blockquote>
-    <p>
-      <b>
-        So how do we play our parts in reducing our carbon footprint?
-      </b>
-    </p>
+    <p>You can continue to read about this specific goal here!</p>
+    <iframe id="iframe" src="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" title="United Nation's Sustainable Development Goals"></iframe>
+    <p>According to statistics and descriptions provided by the <cite>United States Environmental Protection Agency</cite> the global emmisions by economic sectors are as follows:</p>
+    <ol type="I">
+      <li>Electricity and Heat Production (i.e. the burning of coal, natural gas, and oil for electricity and heat)</li>
+      <li>Industry (i.e. emissions from chemical, metallurgical, and minenral transformation processes)</li>
+      <li>Agriculture, Forestry, and Other Land Use (o.e. cultivation of crops and livestock, as well as deforestation)</li>
+      <li>Transportation (i.e. fossil fuels burned in road, rail, air, and marine transportation)</li>
+    </ol>
   </div>
   <hr />
   <br />
   <div class="action">
-    <!-- use image as link -->
+    <p>
+      <strong>
+        So how do we play our parts in reducing our carbon footprint?
+      </strong>
+    </p>
     <p> At <a href="https://www.bishops.com" target="_blank">The Bishop's School</a>, students are often
       encouraged to clean up after themselves and to not take more food than they consume. Additionally,
       the fresh fruits and vegetables that would have normally been thrown out are instead composted as part
       of our sustainability initiative. </p>
     <img id="gif" src="0941706af4b2c042a37d10d3fbce31f6.gif" alt="Sustainability">
+    <p>&check; </p>
+    <p>&check; </p>
+    <p>&check; </p>
+    <p>&check; </p>
 
+    <ul>
+      <li>Start growing your own garden</li>
+      <li>Compost your food scraps</li>
+      <li>Invest in <em>reusable</em> materials (i.e. glass and metal) instead of plastic</li>
+      <li>Look to <em>renewable</em> energy options (i.e. solar-powered houses)</li>
+    </ul>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <td>Climate Action Campaign</td>
+        <td><a href="https://www.climateactioncampaign.org/" target="_blank">climateactioncampaign.org</a></td>
+        <td><address>info@climateactioncampaign.org</address></td>
+      </tr>
+      <tr>
+        <td>Fridays For Future</td>
+        <td><a href="https://fridaysforfuture.org/" target="_blank">fridaysforfuture.org</a></td>
+        <td><address>info@fridaysforfutureusa.org</address></td>
+      </tr>
+    </table>
+    <p>Return to the <a href="#body">top</a>.</p>
   </div>
-  <!--
-  <iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"></iframe>
-
-  FILE PATH
-  <ul>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ul>
-  <table style="width:100%">
-    <tr>
-      <th>Firstname</th>
-      <th>Lastname</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
-  entities and symbols and charset and URL encode
-  border / padding / margin
--->
 </body>
 
 </html>
