@@ -3,3 +3,4 @@ This contains my HTML code for the first assignment, which is centered around en
 The Advanced HTML is a JavaScript submit button (which currently only returns a message) near the action checklist.
 
 Finished HTML assignment is ff936dc.
+Finished CSS assignment is 3a0175d.
