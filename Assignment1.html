@@ -7,94 +7,13 @@
   <meta name="description" content="Sustainability">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <!-- CSS styling for website-->
-  <style>
-    #header {
-      color: white;
-      font-size: 60px;
-      text-align: center;
-    }
 
-    #body {
-      background-color: black;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 20px;
-      padding: 30px;
-    }
-
-    #iframe {
-      height: 400px;
-      width: 800px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #gif {
-      display: block;
-      width: 35%;
-      padding-left: 25px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    #message {
-      display: none;
-    }
-
-    .intro {
-      color: white;
-    }
-
-    .action {
-      color: white;
-    }
-
-    ul {
-      color: white;
-    }
-
-    table {
-      width: 100%
-    }
-
-    table,
-    th,
-    td {
-      border: 1px solid white;
-    }
-
-    a:link {
-      color: #98ff98;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:visited {
-      color: #ADDDE6;
-      background-color: transparent;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #ADDDE6;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-
-    a:active {
-      color: white;
-      background-color: transparent;
-      text-decoration: underline;
-    }
-  </style>
-
+  <link rel="stylesheet" type="text/css" href="Assignment1.css">
 </head>
-
-<body id="body">
+<body class="body">
   <!--basic, general information about the issue -->
+  <h1 id="header">Sustainability</h1>
   <div class="intro">
-    <h1 id="header">Sustainability</h1>
     <p>
       <strong>Environmental sustainability</strong> is a key component in grappling with the issue of climate change.
       It's a globally recognized issue, but one that can be overlooked in our daily lives.
@@ -122,7 +41,7 @@
   </div>
   <hr />
   <!-- more focused on action and change that we can make-->
-  <div class="action">
+  <div class="info">
     <h3>
       So how do we play our parts in reducing our carbon footprint?
     </h3>
@@ -131,9 +50,11 @@
       the fresh fruits and vegetables that would have normally been thrown out are instead composted as part
       of our sustainability initiative. </p>
     <p> With a virtual learning environment this year, we are focusing more on raising awareness and building <strong>sustainable</strong> habits from home through newsletters, videos, and guest speakers.</p>
-    <img id="gif" src="0941706af4b2c042a37d10d3fbce31f6.gif" alt="Sustainability">
-    <hr />
-    <!-- checklist to keep track of what each user may have done for this cause-->
+    <img id="gif" src="positiveearth.gif" alt="Sustainability">
+  </div>
+  <hr />
+  <!-- checklist to keep track of what each user may have done for this cause-->
+  <div class="action">
     <p> Here are some resources to help get you started. There's a checklist for actions to take, as well as some great organizations for this cause!</p>
     <form>
       <input type="checkbox">
@@ -148,7 +69,7 @@
       <label> Look to <em>renewable</em> energy options (i.e. solar power) &#128161;</label><br />
       <input type="button" value="Submit" onclick="clicked()">
     </form>
-   <!-- my advanced HTML section -->
+    <!-- my advanced HTML section -->
     <p id="message"> Thanks for submitting! </p>
     <script>
       function clicked() {
