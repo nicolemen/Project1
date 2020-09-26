@@ -9,11 +9,63 @@
   <meta charset="UTF-8">
 
   <link rel="stylesheet" type="text/css" href="Assignment1.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body class="body">
-  <!--basic, general information about the issue -->
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <img id="pic" src="globe.jpg" alt="Globe" class="rounded-circle" width=50px height=50px>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#intro">Intro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#info">Info</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#action">Action</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <h1 id="header">Sustainability</h1>
-  <div class="intro">
+  <!-- Carousel -->
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner bg-dark">
+      <div class="carousel-item">
+        <img src="LaJolla.jpg" alt="La Jolla" width=700px height=500px class="mx-auto d-block">
+      </div>
+      <div class="carousel-item">
+        <img src="GrandCanyon.jpg" alt="Grand Canyon" width=750px height=500px class="mx-auto d-block">
+      </div>
+      <div class="carousel-item active">
+        <img src="Japan.jpg" alt="Japan" width=400px height=500px class="mx-auto d-block">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!--basic, general information about the issue -->
+  <div class="intro" id="intro">
     <p>
       <strong>Environmental sustainability</strong> is a key component in grappling with the issue of climate change.
       It's a globally recognized issue, but one that can be overlooked in our daily lives.
@@ -23,14 +75,14 @@
     <!--listed statistics and links important resources-->
     <blockquote cite="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/">
       <ul>
-        <li>Each year, an estimated one third of all food produced – equivalent to 1.3 billion tonnes worth around $1 trillion –
-          ends up rotting in the bins of consumers and retailers, or spoiling due to poor transportation and harvesting practices.</li>
+        <li>Each year, an estimated one third of all food produced – equivalent to 1.3 billion tonnes worth around $1 trillion – ends up rotting in the bins of consumers and retailers, or spoiling due to poor transportation and harvesting practices.
+        </li>
         <li>If people worldwide switched to energy efficient light bulbs the world would save US$120 billion annually.</li>
         <li>Should the global population reach 9.6 billion by 2050, the equivalent of almost three planets could be required to provide the natural resources needed to sustain current lifestyles.</li>
       </ul>
     </blockquote>
     <p>You can continue to read about this specific goal here!</p>
-    <iframe id="iframe" src="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" title="United Nation's Sustainable Development Goals"></iframe>
+    <iframe id="iframe" class="mx-auto d-block" src="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" title="United Nation's Sustainable Development Goals" width=800px height=400px></iframe>
     <p>According to statistics and descriptions provided by the <cite>United States Environmental Protection Agency</cite> the global emmisions by economic sectors are as follows:</p>
     <ol type="I">
       <li>Electricity and Heat Production (i.e. the burning of coal, natural gas, and oil for electricity and heat)</li>
@@ -41,7 +93,7 @@
   </div>
   <hr />
   <!-- more focused on action and change that we can make-->
-  <div class="info">
+  <div class="info" id="info">
     <h3>
       So how do we play our parts in reducing our carbon footprint?
     </h3>
@@ -50,51 +102,37 @@
       the fresh fruits and vegetables that would have normally been thrown out are instead composted as part
       of our sustainability initiative. </p>
     <p> With a virtual learning environment this year, we are focusing more on raising awareness and building <strong>sustainable</strong> habits from home through newsletters, videos, and guest speakers.</p>
-    <img id="gif" src="positiveearth.gif" alt="Sustainability">
+    <img id="gif" src="positiveearth.gif" alt="Sustainability" class="mx-auto d-block">
   </div>
   <hr />
   <!-- checklist to keep track of what each user may have done for this cause-->
-  <div class="action">
+  <div class="action" id="action">
     <p> Here are some resources to help get you started. There's a checklist for actions to take, as well as some great organizations for this cause!</p>
     <form>
-      <input type="checkbox">
-      <label> Educate yourself on the climate crisis &#128218;</label><br />
-      <input type="checkbox">
-      <label> Start growing your own garden &#127969;</label><br />
-      <input type="checkbox">
-      <label> Compost your food scraps &#127858;</label><br />
-      <input type="checkbox">
-      <label> Invest in <em>reusable</em> materials (i.e. glass and metal) instead of plastic &#9851;</label><br />
-      <input type="checkbox">
-      <label> Look to <em>renewable</em> energy options (i.e. solar power) &#128161;</label><br />
-      <input type="button" value="Submit" onclick="clicked()">
+      <div class="form-check mb-2 mr-sm-2">
+        <label class="form-check-label"><input type="checkbox" class="form-check-input"> Educate yourself on the climate crisis <i class="fas fa-book"></i></label><br>
+        <label class="form-check-label"><input type="checkbox" class="form-check-input"> Start growing your own garden <i class="fas fa-seedling"></i></label><br />
+        <label class="form-check-label"><input type="checkbox" class="form-check-input"> Compost your food scraps <i class="fas fa-utensils"></i></label><br />
+        <label class="form-check-label"><input type="checkbox" class="form-check-input">Invest in <em>reusable</em> materials (i.e. glass and metal) instead of plastic <i class="fas fa-recycle"></i></label><br />
+        <label class="form-check-label"><input type="checkbox" class="form-check-input"> Look to <em>renewable</em> energy options (i.e. solar power) <i class="fas fa-solar-panel"></i></label><br />
+      </div>
     </form>
-    <!-- my advanced HTML section -->
-    <p id="message"> Thanks for submitting! </p>
-    <script>
-      function clicked() {
-        document.getElementById('message').style.display = 'block';
-      }
-    </script>
     <br />
-    <!-- used a table to keep track of organizations -->
-    <table>
-      <tr>
-        <th>Organization Name</th>
-        <th>Website</th>
-        <th>Contact For Info</th>
-      </tr>
-      <tr>
-        <td>Climate Action Campaign</td>
-        <td><a href="https://www.climateactioncampaign.org/" target="_blank">climateactioncampaign.org</a></td>
-        <td><a href="mailto:info@climateactioncampaign.org">Send an email to Climate Action Campaign</a></td>
-      </tr>
-      <tr>
-        <td>Fridays For Future</td>
-        <td><a href="https://fridaysforfuture.org/" target="_blank">fridaysforfuture.org</a></td>
-        <td><a href="mailto:info@fridaysforfutureusa.org">Send an email to Fridays For Future</a></td>
-      </tr>
-    </table>
+    <!-- to keep track of organizations -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-3 col-lg-4 bg-dark text-white">Organization Name</div>
+        <div class="col-sm-5 col-md-4 col-lg-4 bg-dark text-white">Website</div>
+        <div class="col-sm-4 col-md-5 col-lg-4 bg-dark text-white">Contact For Info</div>
+        <div class="col-sm-3 col-md-3 col-lg-4 bg-light">Climate Action Campaign</div>
+        <div class="col-sm-5 col-md-4 col-lg-4 bg-light"><a href="https://www.climateactioncampaign.org/" target="_blank">climateactioncampaign.org</a></div>
+        <div class="col-sm-4 col-md-5 col-lg-4 bg-light"><a href="mailto:info@climateactioncampaign.org">Send an email to Climate Action Campaign</a></div>
+        <div class="col-sm-3 col-md-3 col-lg-4 bg-light">Fridays For Future</div>
+        <div class="col-sm-5 col-md-4 col-lg-4 bg-light"><a href="https://fridaysforfuture.org/" target="_blank">fridaysforfuture.org</a></div>
+        <div class="col-sm-4 col-md-5 col-lg-4 bg-light"><a href="mailto:info@fridaysforfutureusa.org">Send an email to Fridays For Future</a></div>
+      </div>
+    </div>
+
     <br />
     <!-- anchor in the website-->
     <p> Thanks for reading this far! Return to the <a href="#body">top</a>.</p>
